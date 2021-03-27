@@ -1,0 +1,11 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.gray-btn {
+  background-color: $lightGrayBtn;
+  color: $darkBlueText;
+}
