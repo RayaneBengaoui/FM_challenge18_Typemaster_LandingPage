@@ -1,0 +1,25 @@
+{
+  "name": "challenge18_typemaster_landing_page",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Typemaster pre-launch landing page challenge on Frontend Mentor](). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RayaneBengaoui/FM_challenge18_Typemaster_LandingPage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RayaneBengaoui/FM_challenge18_Typemaster_LandingPage/issues"
+  },
+  "homepage": "https://github.com/RayaneBengaoui/FM_challenge18_Typemaster_LandingPage#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.32.8"
+  }
+}

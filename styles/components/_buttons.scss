@@ -1,0 +1,6 @@
+@use "../abstracts/" as *;
+
+.gray-btn {
+  background-color: $lightGrayBtn;
+  color: $darkBlueText;
+}
