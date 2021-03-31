@@ -1,3 +1,5 @@
+@use '../abstracts/' as *;
+
 main {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -40,13 +42,22 @@ main {
   grid-column: 1/2;
   grid-row: 3;
   transform: translateX(-1rem);
+  background-color: $orange;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
   img {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+
+    opacity: 0.5;
+    // filter: invert(43%) sepia(71%) saturate(593%) hue-rotate(353deg)
+    //   brightness(98%) contrast(93%);
   }
 }
 .image-holder3 {
   grid-column: 2/3;
   grid-row: 3;
+
   transform: translateX(-0.5rem);
 }
