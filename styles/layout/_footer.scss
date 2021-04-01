@@ -1,0 +1,33 @@
+@use "../abstracts/" as *;
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
+
+  h3 {
+    max-width: 13rem;
+  }
+
+  p {
+    padding-top: 2rem;
+  }
+}
+
+.functionality_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .orange-bg {
+    background-color: $orange;
+    width: 65px;
+    height: 65px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+}

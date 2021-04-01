@@ -1,5 +1,6 @@
 @use "global";
 @use "./abstracts/typography";
+@use "./components/buttons";
 @use "./layout/header";
 @use "./layout/main";
-@use "./components/buttons";
+@use "./layout/footer";
