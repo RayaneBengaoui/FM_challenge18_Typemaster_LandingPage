@@ -1,27 +1,15 @@
 @use "index" as *;
 
 h1 {
-  font-size: 3rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  line-height: 3rem;
-  color: $darkBlueText;
+  @include typography(3rem, 900, uppercase, 3rem, $darkBlueText);
 }
 
 h2 {
-  font-size: 2rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  line-height: 2.25rem;
-  color: $darkBlueText;
+  @include typography(2rem, 900, uppercase, 2.25rem, $darkBlueText);
 }
 
 h3 {
-  font-size: 1.5rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  line-height: 1.75rem;
-  color: $darkBlueText;
+  @include typography(1.5rem, 900, uppercase, 1.75rem, $darkBlueText);
 }
 
 p {

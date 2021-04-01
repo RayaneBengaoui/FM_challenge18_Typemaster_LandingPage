@@ -24,9 +24,7 @@ main {
 }
 
 .intro__order {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flexContainer(row, space-between, center);
 
   &__releasetext {
     padding-right: 2rem;

@@ -14,19 +14,14 @@ footer {
 }
 
 .functionality_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flexContainer(column, center, center);
 
   .orange-bg {
+    @include flexContainer(row, center, center);
     background-color: $orange;
     width: 65px;
     height: 65px;
     border-radius: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 4rem;
     margin-bottom: 3rem;
   }
