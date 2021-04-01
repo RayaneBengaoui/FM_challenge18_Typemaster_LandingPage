@@ -15,6 +15,7 @@ main {
 }
 
 .gray-square {
+  display: none;
   position: absolute;
   width: 255px;
   height: 240px;
@@ -163,6 +164,10 @@ main {
     grid-template-rows: 500px 500px;
     gap: 1.5rem;
     position: relative;
+  }
+
+  .gray-square {
+    display: block;
   }
 
   .intro {

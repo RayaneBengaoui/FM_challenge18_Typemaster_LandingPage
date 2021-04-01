@@ -3,9 +3,18 @@
 .gray-btn {
   background-color: $lightGrayBtn;
   color: $darkBlueText;
+
+  &:hover {
+    background-color: $darkBlueBtn;
+    color: white;
+  }
 }
 
 .orange-btn {
   background-color: $orange;
   color: $white;
+
+  &:hover {
+    background-color: #ff9b62;
+  }
 }
