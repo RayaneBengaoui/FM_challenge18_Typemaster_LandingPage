@@ -8,3 +8,9 @@ header {
     border-radius: 0;
   }
 }
+
+@media screen and (min-width: 700px) {
+  header {
+    margin-bottom: 2rem;
+  }
+}

@@ -50,6 +50,7 @@ main {
   background-color: $orange;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  overflow: hidden;
 
   img {
     border-top-left-radius: 0;
@@ -75,5 +76,66 @@ main {
   }
   p {
     padding-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    grid-template-columns: 0.6fr 0.4fr 1fr;
+    grid-template-rows: 425px 320px auto;
+    gap: 2rem;
+  }
+
+  .intro {
+    @include flexContainer(column, center, center);
+    grid-column: 1/3;
+    grid-row: 1;
+
+    .intro__order {
+      align-self: stretch;
+
+      &__releasetext {
+        padding-right: unset;
+      }
+    }
+  }
+
+  .image-holder1 {
+    grid-column: 3/4;
+    grid-row: 1;
+    transform: translateX(2rem);
+
+    img {
+      border-top-right-radius: unset;
+      border-bottom-right-radius: unset;
+    }
+  }
+  .image-holder2 {
+    grid-column: 1/2;
+    grid-row: 2;
+    transform: unset;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .image-holder3 {
+    grid-column: 2/4;
+    grid-row: 2;
+    transform: unset;
+  }
+
+  .information {
+    @include flexContainer(row, space-between, center);
+    text-align: left;
+    grid-column: 1/4;
+    grid-row: 3;
+
+    h2 {
+      flex-basis: 30%;
+      margin: unset;
+    }
+    p {
+      flex-basis: 60%;
+      padding-top: unset;
+    }
   }
 }

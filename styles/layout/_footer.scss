@@ -3,6 +3,9 @@
 footer {
   margin-top: 3rem;
   text-align: center;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
 
   h3 {
     max-width: 13rem;
@@ -32,5 +35,32 @@ footer {
   padding-bottom: 2rem;
   span {
     font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: left;
+    gap: 2rem;
+
+    > p {
+      max-width: 280px;
+      padding-top: 1.5rem;
+    }
+  }
+
+  .functionality_container {
+    @include flexContainer(column, flex-start, flex-start);
+    .orange-bg {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .rights {
+    grid-column: 1/3;
+    grid-row: 3;
+    text-align: center;
   }
 }
