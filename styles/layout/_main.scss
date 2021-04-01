@@ -43,14 +43,16 @@ main {
   grid-row: 3;
   transform: translateX(-1rem);
   background-color: $orange;
+
+  // background-blend-mode: multiply;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 
   img {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-
-    opacity: 0.5;
+    mix-blend-mode: multiply;
+    // opacity: 0.5;
     // filter: invert(43%) sepia(71%) saturate(593%) hue-rotate(353deg)
     //   brightness(98%) contrast(93%);
   }
