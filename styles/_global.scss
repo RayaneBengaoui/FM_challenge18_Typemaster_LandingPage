@@ -33,3 +33,10 @@ button {
     padding: 2rem;
   }
 }
+@media screen and (min-width: 1000px) {
+  body {
+    padding: 4rem 8rem;
+    max-width: 1440px;
+    margin: auto;
+  }
+}
